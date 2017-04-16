@@ -20,6 +20,7 @@ from sklearn.model_selection import train_test_split
     
 current_path = './data/IMG/' 
 
+#from https://medium.com/@acflippo/cloning-driving-behavior-by-augmenting-steering-angles-5faf7ea8a125
 def perturb_angle(angle):
     new_angle = angle * (1.0 + np.random.uniform(-1, 1)/30.0)
     return new_angle
@@ -75,7 +76,7 @@ def generator(samples, batch_size=32):
                     yield shuffle(np.array(images), np.array(measurements))
                     images, measurements = ([],[])
 
-
+#NVIDIA model
 def build_model():
 
     model = Sequential()
