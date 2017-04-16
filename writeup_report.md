@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/center_2016_12_01_13_31_12_937.png "Grayscaling"
+[image2]: ./examples/center_2016_12_01_13_31_12_937.jpg "Center"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
@@ -74,7 +74,7 @@ The final model architecture (model.py lines 79-102) consisted of a convolution 
 Model summary:
 ____________________________________________________________________________________________________
 Layer (type)                     Output Shape          Param #     Connected to                     
-=====================================================================
+____________________________________________________________________________________________________
 lambda_1 (Lambda)                (None, 90, 320, 3)    0           lambda_input_1[0][0]             
 ____________________________________________________________________________________________________
 convolution2d_1 (Convolution2D)  (None, 43, 158, 24)   1824        lambda_1[0][0]                   
@@ -106,7 +106,7 @@ ________________________________________________________________________________
 dropout_2 (Dropout)              (None, 10)            0           dense_3[0][0]                    
 ____________________________________________________________________________________________________
 dense_4 (Dense)                  (None, 1)             11          dropout_2[0][0]                  
-=====================================================================
+____________________________________________________________________________________________________
 Total params: 533,819
 Trainable params: 533,819
 Non-trainable params: 0
